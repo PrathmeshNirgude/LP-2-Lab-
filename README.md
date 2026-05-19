@@ -7,12 +7,12 @@ This repository contains the implementation of various Artificial Intelligence a
 
 #  Practicals Included
 
-| Practical No. | Title |
-| 01 | Depth First Search (DFS) and Breadth First Search (BFS) |
-| 02 | A* Search Algorithm |
-| 03 | Greedy Algorithms |
-| 04 | Constraint Satisfaction Problem |
-| 05 | Elementary Chatbot |
+
+1. Depth First Search (DFS) and Breadth First Search (BFS) 
+2. A* Search Algorithm 
+3. Greedy Algorithms 
+4. Constraint Satisfaction Problem 
+5. Elementary Chatbot 
 
 ---
 
