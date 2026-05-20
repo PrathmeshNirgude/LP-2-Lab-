@@ -30,6 +30,28 @@ class prac1{
             }
         }
     }
+
+    
+    void BFS(int startVertex){
+        Deque<Integer> q = new ArrayDeque<>();
+        boolean[] visited = new boolean[vertices];
+
+        visited[startVertex] = true;
+        q.add(startVertex);
+        while(!q.isEmpty()){
+            int v = q.poll();
+            System.out.print(v+" ");
+
+            for(int child : graph.get(v)){
+                if(!visited[child]){
+                    visited[child] = true;
+                    q.add(child);
+                }
+            }
+        }
+    }
+
+    
      public static void main(String[] args){
 
         Scanner sc = new Scanner(System.in);
@@ -55,6 +77,10 @@ class prac1{
         System.out.println("\nDFS :");
         boolean visited[] = new boolean[v];
         t.DFS(0,visited);
+
+         
+        System.out.println("\nBFS :");
+        t.BFS(0);
     }
 
 }
