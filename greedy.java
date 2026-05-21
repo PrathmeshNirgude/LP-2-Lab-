@@ -22,3 +22,13 @@ class Pair implements Comparable<Pair>{
         return this.weight - other.weight;
     }
 }
+
+
+
+class prac3 {
+
+    void addEdge(List<List<Edge>> graph,int source,int destination,int weight){
+        graph.get(source).add(new Edge(destination,weight));
+        graph.get(destination).add(new Edge(source,weight));
+    }
+}
