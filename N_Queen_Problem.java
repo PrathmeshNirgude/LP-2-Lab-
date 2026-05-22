@@ -14,4 +14,26 @@ class N_Qeen_Problem{
             System.out.println();
         }
     }
+     boolean isValid(char[][] board,int row ,int col){
+
+        for(int i = 0 ; i < row ; i++){
+            if(board[i][col]=='Q'){
+                return false;
+            }
+        }
+
+        for(int r = row - 1, c = col -1 ; r >= 0 && c >= 0 ; r--,c--){
+            if(board[r][c]=='Q'){
+                return false;
+            }
+        }
+
+        for( int r = row - 1, c = col+1 ; r >= 0 && c <n ; r--,c++){
+            if(board[r][c]=='Q'){
+                return false;
+            }
+        }
+
+        return true;
+    }
 }
