@@ -36,4 +36,29 @@ class N_Qeen_Problem{
 
         return true;
     }
+
+    
+    boolean solve(char[][] board, int row){
+        if(row == n){
+            printBoard(board);
+            return true;
+        }
+
+        for( int col = 0 ; col<n ; col++){
+
+            if(isValid(board,row,col)){
+
+                board[row][col] = 'Q';
+
+                if(solve(board,row+1)){
+                    return true;
+                }
+
+                board[row][col] = '.';
+
+            }
+        }
+        return false;
+    }
+
 }
