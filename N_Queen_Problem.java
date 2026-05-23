@@ -60,5 +60,22 @@ class N_Qeen_Problem{
         }
         return false;
     }
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the size of board :");
+        n = sc.nextInt();
+        sc.close();
 
+        char[][] board = new char[n][n];
+        for(int i = 0 ; i < n ; i++){
+            for (int j = 0 ; j < n ; j++){
+                board[i][j] = '.';
+            }
+        }
+
+        N_Queen_Problem t = new N_Queen_Problem();
+        if(!t.solve(board,0)){
+            System.out.println("no solution exist!!!");
+        }
+    }
 }
