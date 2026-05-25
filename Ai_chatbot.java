@@ -30,6 +30,26 @@ void main(){
             }
             s.append("hi ,"+ name);
         }
+        else if(input.contains("offer")){
+            s.append("\n\twe offer electronic gadgets , mobiles, laptop , dresses, furniture and many more things you can visit our official website to know more.");
+        }
+        else if(input.contains("order")){
+            s.append("\n\tTo order you have to first login and the add it to cart and then you can place order .");
+
+        }
+        else if(input.contains("damaged")){
+            s.append("\n\tif you get any damaged product we offer 7 days return policy so you can return it, just place return request on you login. ");
+
+        }else if(input.contains("price")){
+            s.append("\n\tto know the prices of product you have to visit our official website.");
+        }
+        else if(input.contains("contact")||input.contains("support")){
+            s.append("\n\tif you are having any more problems you can call on customer support :9865324578 .\nThank you.");
+        }
+        else if(input.contains("bye")){
+            System.out.println("exiting...");
+            break;
+        }
         else{
             System.out.println("Bot: sorry i did not understand your question. if issue persist pleas contact support team.");
             s.setLength(0);
